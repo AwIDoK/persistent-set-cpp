@@ -52,7 +52,7 @@ private:
 
     std::shared_ptr<basic_node> insert_impl(basic_node *pos, T const &value, basic_node *&result);
 
-    mutable std::shared_ptr<basic_node> fake;
+    std::shared_ptr<basic_node> fake;
     
     size_t size_;
 };
